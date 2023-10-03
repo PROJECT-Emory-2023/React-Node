@@ -1,38 +1,173 @@
-.App {
+* {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+body {
+  margin: 0;
+}
+
+.site-title {
+  font-size: 2rem;
+}
+
+/* nav bar */
+.nav {
+  width: 100%;
+  top: 0;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 0 1rem;
+  border-bottom: 2px solid white;
+  position: fixed;
+}
+
+.nav ul {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   display: flex;
+   gap: 1rem;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+
+}
+
+.nav li.active {
+  color: #777;
+}
+
+.nav li:hover {
+  background-color: #777;
+}
+
+.home-page {
+  display: flex;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.left-half {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: solid white;
+}
+
+.left-half img {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.right-half {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-half h1 {
+  font-size: 2rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* login and signup button to switch tabs*/
+.link-button {
+  background: none;
+  color: black;
+  text-decoration: underline dotted 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  border: none;
+  background-color: black;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input {
+  margin: 0.35rem 0;
+  padding: 1rem;
+  border-color: black;
+  border-radius: 10px;
+}
+
+/* Log In */
+ 
+.login-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Adjust styles for the "Already have an account" button */
+.link-button {
+  background-color: transparent;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+} 
+
+.form-container-login {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white; /* Add a border around the container */
+  border-radius: 5px; /* Add rounded corners for a more appealing look */
+  padding: 5px; /* Add some padding inside the container */
+  max-width: 400px; /* Add this line to set a fixed width for the container */
+  margin: 150px auto; /* Center horizontally */
+  /* Center vertically using flexbox */
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container-login h1 {
+  text-align: center; /* Center the header text */
+  margin-bottom: 20px;
+  color: white;
 }
+
+.form-container-login label,
+.form-container-login input,
+.form-container-login button {
+  display: block; /* Display form elements as block elements to stack them vertically */
+  margin-bottom: 10px;
+}
+
+.form-container-login input{
+  width: 100%; /* Make the input and button elements occupy the full container width */
+  background-color: white; /* Set the input box background color to white */
+  border: 5px solid white; /* Add a border for better visibility */
+  padding: 10px; /* Add padding for spacing inside the input box */
+  border-radius: 5px; /* Add rounded corners for a more appealing look */
+  color: #333;
+}
+
+.form-container-login button[type="submit"] {
+  width: 50%;
+  border: 1px solid white;
+  border-radius: 5px;
+  border-color: white;
+
+}
+

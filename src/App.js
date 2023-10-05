@@ -10,6 +10,7 @@ function App() {
     <React.Fragment>
      <Nav />
     <div className='container'>
+      /* routes container */
       <Routes>
         <Route path = '/Home' element = {<Home />} />
         <Route path = '/Login' element = { <Login /> } />

@@ -7,10 +7,10 @@ import {Route, Routes} from 'react-router-dom'
 
 function App() {
   return (
-    <React.Fragment>
+    <React.Fragment> 
      <Nav />
     <div className='container'>
-      /* routes container */
+      {/* routes container */}
       <Routes>
         <Route path = '/Home' element = {<Home />} />
         <Route path = '/Login' element = { <Login /> } />

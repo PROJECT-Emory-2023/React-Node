@@ -2,6 +2,7 @@ import React from "react"
 import {Link} from "react-router-dom"
 import { useLocation } from 'react-router-dom';
 
+// const Home = () => {
 function Home() {
     const location = useLocation();
     
